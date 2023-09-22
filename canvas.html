@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,34 @@
     <!--https://jhutanda.com-->
     <!--https://github.com/jhutanda-->
 </head>
+
 <body>
-   
+    <!--Example:1-->
+    <div>
+        <canvas width="200" height="200" style="border:1px solid red"></canvas>
+    </div>
+    <div>
+        <canvas width="200" height="100" style="border:1px solid green"></canvas>
+    </div>
+
+    <!--Example:2 use class or id and use it on css or javascript-->
+    <div>
+        <canvas class="canvasclass" width="200" height="100" style="border:1px solid green"></canvas>
+    </div>
+    <div>
+        <canvas id="canvasid" width="200" height="100" style="border:1px solid green"></canvas>
+    </div>
+
+    <style>
+        .canvasclass {
+            background-color: red;
+        }
+
+        #canvasid {
+            background-color: blue;
+        }
+    </style>
+
 </body>
+
 </html>
