@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,45 @@
     <!--https://jhutanda.com-->
     <!--https://github.com/jhutanda-->
 </head>
+
 <body>
-   
+    <h1>head</h1>
+
+    <!-- html <data> tag for see any mobile value  -->
+    <h3>Mobile</h3>
+    <ol>
+        <li> <data class="mobile" value="101">Apple</data></li>
+        <li> <data class="mobile" value="201">Nokia</data></li>
+        <li> <data class="mobile" value="301">Redmi</data></li>
+        <li> <data class="mobile" value="401">One</data></li>
+    </ol>
+
+    <!-- html <data> tag for see any tv value  -->
+    <h3>TV</h3>
+    <ol>
+        <li> <data class="tv" value="101"> Apple </data></li>
+        <li> <data class="tv" value="201"> Nokia </data></li>
+        <li> <data class="tv" value="301"> Redmi </data></li>
+        <li> <data class="tv" value="401"> One </data></li>
+    </ol>
+
+    <!-- css style -->
+
+    <style>
+        /* mobile data value show */
+        .mobile:hover::after {
+            content: ' (M-ID: ' attr(value) ')';
+            font-size: 0.6em;
+            background-color: aqua;
+        }
+
+        /* tv data value show */
+        .tv:hover::after {
+            content: ' (T-ID: ' attr(value) ')';
+            font-size: 0.6em;
+            background-color: yellow;
+        }
+    </style>
 </body>
+
 </html>
