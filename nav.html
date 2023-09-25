@@ -8,6 +8,44 @@
     <!--https://github.com/jhutanda-->
 </head>
 <body>
-   
+   <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+    </ul>
+   </nav>
+
+   <style>
+    nav{
+        background-color: aqua;
+        width: 100%;
+        top: 0;
+        left: 0;
+        
+    }
+    ul{
+        display: flex;
+        list-style-type: none; 
+        font-weight: 600;
+              
+    }
+    ul>li{
+        padding: 10px;
+        margin: 5px;
+               
+    }
+    ul>li:hover{
+        background-color: red;
+        padding: 10px;        
+    }
+    ul>li>a{
+        text-decoration: none;
+    }
+    ul>li>a:hover{
+        color: white;
+    }
+   </style>
 </body>
 </html>
