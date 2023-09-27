@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,49 @@
     <!--https://jhutanda.com-->
     <!--https://github.com/jhutanda-->
 </head>
+
 <body>
-   
+    <h1>output</h1>
+
+    <!-- -----------------------
+    ----------------------------
+        z=x+y
+        z=x-y
+    ----------------------------
+    ---------------------------->
+
+    <!-- example:2 -->
+    <!-- use "+" sign -->
+    <form oninput="z.value=parseInt(x.value)+parseInt(y.value)">
+
+        <!-- starting range -->
+        <input type="range" id="x" value="10">
+        +
+        <!-- previous selected value -->
+        <input type="number" id="y" value="25">
+
+        <!-- output value -->
+        = <output name="z" for="x y"></output>
+
+    </form>
+
+    <br><br>
+
+    <!-- Example:1 -->
+    <!-- use "-" sign -->
+    <form oninput="z.value=parseInt(x.value)-parseInt(y.value)">
+
+        <!-- starting range -->
+        <input type="range" id="x" value="10">
+        -
+        <!-- previous selected value -->
+        <input type="number" id="y" value="25">
+
+        <!-- output value -->
+        = <output name="z" for="x y"></output>
+
+    </form>
+
 </body>
+
 </html>
