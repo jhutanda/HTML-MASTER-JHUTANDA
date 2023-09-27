@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,36 @@
     <!--https://jhutanda.com-->
     <!--https://github.com/jhutanda-->
 </head>
+
 <body>
-   
+    <label for="">Choose any:</label>
+    <select name="Choose" id="Chooseid">
+        <option value="select any">Select Any Option</option>
+        <optgroup label="Numeric" id="optg1">
+            <option value="one">one</option>
+            <option value="two">two</option>
+            <option value="three">three</option>
+            <option value="four">four</option>
+        </optgroup>
+        <optgroup label="Alphabet" id="optg2">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </optgroup>
+    </select>
+    <!-- More understand just use some color. -->
+    <style>
+        #optg1 {
+            background-color: aqua;
+            color: brown;
+        }
+
+        #optg2 {
+            background-color: red;
+            color: white;
+        }
+    </style>
 </body>
+
 </html>
