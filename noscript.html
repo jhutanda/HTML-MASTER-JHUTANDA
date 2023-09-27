@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,29 @@
     <!--https://jhutanda.com-->
     <!--https://github.com/jhutanda-->
 </head>
+
 <body>
-   
+    <h1>Noscript</h1>
+    <!-- run the code Example:1 and inspect it. Therefore run the second code and inspect it and see the difference  -->
+    <!-- Example:1 without noscript -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia adipisci provident maxime alias magnam optio
+        reiciendis libero, modi neque esse!
+    </p>
+    <script>
+        document.write("Jhutanda");
+    </script>
+
+    <!-- Example:2 using noscript tag -->
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia adipisci provident maxime alias magnam optio
+        reiciendis libero, modi neque esse!
+    </p>
+    <noscript>
+        <script>
+            document.write("Jhutanda");
+        </script>
+
+    </noscript>
 </body>
+
 </html>
