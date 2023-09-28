@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,20 @@
     <!--https://jhutanda.com-->
     <!--https://github.com/jhutanda-->
 </head>
+
 <body>
-   
+    <h1>picture</h1>
+    <!-- Example:1 -->
+    <picture>
+        <source srcset="img.jpg">
+        <img src="images/img.jpg" alt="image">
+    </picture>
+
+    <!-- Example:2 -->
+    <picture>
+        <source srcset="img,jpg" media="(min-height:400px; min-width:300px;)">
+        <img src="images/img.jpg" alt="image">
+    </picture>
 </body>
+
 </html>
