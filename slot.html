@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,64 @@
     <!--https://jhutanda.com-->
     <!--https://github.com/jhutanda-->
 </head>
+
 <body>
-   
+    <h1>slot tag</h1>
+
+    <!-- Create a template -->
+    <template>
+        <!-- dl means discription list -->
+        <dl>
+            <!-- dt meand discription terms -->
+            <dt name="name"></dt>
+            <!-- dd means discription data -->
+            <dd name="roll"></dd>
+            <dd name="mobile No"></dd>
+            <dd name="email"></dd>
+        </dl>
+
+        <!-- add style -->
+        <style>
+            template {
+                background-color: beige;
+            }
+
+            dl {
+                background-color: white;
+            }
+
+            dt {
+                background-color: red;
+            }
+
+            dd {
+                background-color: yellow;
+            }
+        </style>
+
+    </template>
+
+    <!-- add the data on template -->
+    <div>
+        <span slot="name">jhutanda</span>
+        <span slot="roll">1</span>
+        <span slot="mobile No">995533225</span>
+        <span slot="email">help@admin.com</span>
+    </div>
+    <div>
+        <span slot="name">xyz</span>
+        <span slot="roll">10</span>
+        <span slot="mobile No">1285522325</span>
+        <span slot="email">xyz@admin.com</span>
+    </div>
+    <div>
+        <span slot="name">abc</span>
+        <span slot="roll">50</span>
+        <span slot="mobile No">111112525</span>
+        <span slot="email">abc@gmail.com</span>
+    </div>
+
+
 </body>
+
 </html>
